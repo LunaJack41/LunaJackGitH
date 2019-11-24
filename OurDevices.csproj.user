@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Views\CreateDeviceAddressView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\CreateDeviceView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\CreatePersonView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\CreateRoomView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\DevicesDataGridView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\ListRoomView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\PersonDataGridView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\ShellView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Views\CreateDeviceAddressView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\CreateDeviceView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\CreatePersonView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\CreateRoomView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\DevicesDataGridView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\ListRoomView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\PersonDataGridView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\ShellView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

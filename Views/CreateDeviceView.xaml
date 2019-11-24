@@ -1,0 +1,91 @@
+﻿<UserControl x:Class="OurDevices.Views.CreateDeviceView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:OurDevices.Views"
+             mc:Ignorable="d" Background="Wheat"
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+        <StackPanel Orientation="Vertical" Margin="10,0,10,0">
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="auto" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="20" />
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="20" />
+                </Grid.RowDefinitions>
+                <!-- Row 1-->
+                <TextBlock Margin="5 0 10 10" Grid.Column="0" Grid.Row="1" FontSize="20" FontStyle="Oblique"> 
+                    Enter Devices
+                </TextBlock>
+
+                <!-- Row 2-->
+                <TextBlock Margin="5 0 10 10" Grid.Column="0" Grid.Row="2">Device Name</TextBlock>
+                <TextBox x:Name="DeviceName" Margin="0 0 5 10" Grid.Column="1" Grid.Row="2"></TextBox>
+
+                <!-- Row 3-->
+                <TextBlock Margin="5 0 10 10" Grid.Column="0" Grid.Row="3">Choose Device</TextBlock>
+                <ComboBox x:Name="AvailableDevices" Margin="0 0 5 10" Grid.Column="1" Grid.Row="3"
+                          SelectedItem="{Binding Path=SelectedDeviceToEdit, Mode=OneWayToSource}"
+                          DisplayMemberPath="DeviceName"/>
+
+
+                <!-- Row 4-->
+                <TextBlock Margin="5 0 10 10" Grid.Column="0" Grid.Row="4">Device Type</TextBlock>
+                <TextBox x:Name="DeviceType" Margin="0 0 5 10" Grid.Column="1" Grid.Row="4"></TextBox>
+                <!-- Row 5-->
+                <TextBlock Margin="5 0 10 10" Grid.Column="0" Grid.Row="5">IP Address</TextBlock>
+                <ComboBox x:Name="AvailableIPAddress" Margin="0 0 5 10" Grid.Column="1" Grid.Row="5"
+                          SelectedItem="{Binding Path=SelectedIPAdressToAdd, Mode=OneWayToSource}"
+                          DisplayMemberPath="IPAddress"/>
+
+                <!-- Row 6-->
+                <TextBlock Margin="5 0 10 10" Grid.Column="0" Grid.Row="6">MAC Address</TextBlock>
+                <TextBox x:Name="MACAddress" Margin="0 0 5 10" Grid.Column="1" Grid.Row="6"></TextBox>
+                <!-- Row 7-->
+                <TextBlock Margin="5 0 10 10" Grid.Column="0" Grid.Row="7">Mobile</TextBlock>
+                <CheckBox x:Name="Mobile" IsChecked="True" Margin="0 0 5 10" Grid.Column="1" Grid.Row="7">
+                    
+                </CheckBox>
+                <!-- Row 7-->
+                
+                
+                
+                <!-- Row 11-->
+                <StackPanel Orientation="Horizontal"  Grid.Row="11" Grid.Column="1"  
+                            HorizontalAlignment="Center" Margin="5 0 10 10">
+                    <Button x:Name="CreateDevice" Background="Green" Margin="0 0 5 0"  Grid.Column="1"
+                         Grid.ColumnSpan="2" Grid.Row="11" Padding="10">
+                        Create Device
+                    </Button>
+                    <Button x:Name="Update" Background="White" Padding="10"  >Update</Button>
+                    <Button x:Name="DeleteDevice" Background="White" Padding="10"  >Delete Device</Button>
+                    <Button x:Name="CancelCreation" Background="Red" Margin="5 0 0 0" Padding="20"  >Cancel</Button>
+                </StackPanel>
+
+                
+                
+
+            </Grid>
+           
+
+        </StackPanel>
+
+    </Grid>
+</UserControl>
