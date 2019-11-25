@@ -5704,11 +5704,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\lunaj\\source\\repos\\OurDevices\\OurDevices.csproj",
+      "projectUniqueName": "C:\\Users\\lunaj\\source\\repos\\git_one\\OurDevices.csproj",
       "projectName": "OurDevices",
-      "projectPath": "C:\\Users\\lunaj\\source\\repos\\OurDevices\\OurDevices.csproj",
+      "projectPath": "C:\\Users\\lunaj\\source\\repos\\git_one\\OurDevices.csproj",
       "packagesPath": "C:\\Users\\lunaj\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\lunaj\\source\\repos\\OurDevices\\obj\\",
+      "outputPath": "C:\\Users\\lunaj\\source\\repos\\git_one\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",

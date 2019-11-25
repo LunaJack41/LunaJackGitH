@@ -11,12 +11,13 @@ namespace OurDevices
     {
         public Bootstrapper()
         {
-			//Adding a comment just to test Git
+			
             Initialize();
         }
 
         protected override void OnStartup(object sender, StartupEventArgs e)
         {
+            //Adding a comment to test Git to remote
             DisplayRootViewFor<ShellViewModel>();
         }
     }
